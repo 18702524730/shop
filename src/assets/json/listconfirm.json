@@ -1,0 +1,52 @@
+{
+    "msg": "获取记录成功",
+    "totalsize": 1,
+    "code": "success",
+    "data": {
+        "order": [
+            {
+                "standardPrice": "1999",
+                "productName": "国内商标注册申请(担保版)",
+                "payMoney": "1999",
+                "productNum": "1",
+                "id": 1
+            },
+            {
+                "standardPrice": "6000",
+                "productName": "发明专利驳回复审",
+                "payMoney": "6000",
+                "productNum": "1",
+                "id": 1
+            },
+            {
+                "standardPrice": "600",
+                "productName": "软件著作权登记",
+                "payMoney": "600",
+                "productNum": "1",
+                "id": 1
+            },
+            {
+                "standardPrice": "1000",
+                "productName": "国内补发商标注册证",
+                "payMoney": "1000",
+                "productNum": "1",
+                "id": 1
+            }
+        ],
+        "applicant": [
+            {
+                "bodyId": "1",
+                "name": "杭州硕博科技有限公司",
+                "typeName": "大陆企业"
+            },
+            {
+                "bodyId": "2",
+                "name": "王刚",
+                "typeName": "大陆个体"
+            }
+        ],
+        "totalPrice": "9599",
+        "payPrice": "9599"
+    },
+    "page": 1
+}

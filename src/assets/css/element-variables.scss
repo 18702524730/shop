@@ -1,0 +1,40 @@
+/* 改变主题色变量 */
+$--color-primary: #3DB1FA;
+$--color-success: #36AF47;
+$--color-warning: #FF9639;
+$--color-danger: #FF3939;
+$--color-info: #909399;
+
+/* el-button */
+$--button-default-fill: #fff;
+$--button-default-border: #3DB1FA;
+$--button-default-color: #3DB1FA;
+$--button-active-shade-percent: 0.2;
+$--button-border-radius: 2px;
+$--button-padding-vertical: 13px;
+$--button-padding-horizontal: 50px;
+$--button-font-size: 16px;
+$--button-medium-padding-vertical: 13px;
+$--button-medium-padding-horizontal: 35px;
+$--button-medium-font-size: 14px;
+$--button-small-padding-vertical: 7px;
+$--button-small-padding-horizontal: 20px;
+$--button-small-font-size: 14px;
+$--button-mini-padding-vertical: 5px;
+$--button-mini-padding-horizontal: 15px;
+$--button-mini-font-size: 12px;
+
+
+/* el-input */
+$--input-color: #333333;
+$--input-border:1px solid #E6E6E6;
+$--input-border-radius: 2px;
+$--input-icon-color: #DDDDDD;
+
+/* select-dropdown */
+$--select-option-hover-background: #F5F5F5;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

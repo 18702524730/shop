@@ -1,0 +1,161 @@
+
+/*-- 下面的css后面会移到common.js中  --*/
+.fll, .fl{
+    float: left;
+}
+.flr, .fr{
+    float: right;
+}
+.clearfix{
+	clear: both;
+	&:after{
+    display:block;
+    content:'';
+    clear:both;
+	}
+}
+.lc{text-align: center;}
+.ll{text-align: left;}
+.lr{text-align: right;}
+.ml-5,.ml5{margin-left: 5px;}
+.ml-10,.ml10{margin-left: 10px;}
+.ml-15,.ml15{margin-left: 15px;}
+.ml-20,.ml20{margin-left: 20px;}
+.ml-25,.ml25{margin-left: 25px;}
+.ml-30,.ml30{margin-left: 30px;}
+.ml-35,.ml35{margin-left: 35px;}
+.ml-40,.ml40{margin-left: 40px;}
+.ml-50,.ml50{margin-left: 50px;}
+
+.mt-5,.mt5{margin-top: 5px;}
+.mt-10,.mt10{margin-top: 10px;}
+.mt-15,.mt15{margin-top: 15px;}
+.mt-20,.mt20{margin-top: 20px;}
+.mt-25,.mt25{margin-top: 25px;}
+.mt-30,.mt30{margin-top: 30px;}
+.mt-35,.mt35{margin-top: 35px;}
+.mt-40,.mt40{margin-top: 40px;}
+.mt-50,.mt50{margin-top: 50px;}
+
+.mr-5,.mr5{margin-right: 5px;}
+.mr-10,.mr10{margin-right: 10px;}
+.mr-15,.mr15{margin-right: 15px;}
+.mr-20,.mr20{margin-right: 20px;}
+.mr-25,.mr25{margin-right: 25px;}
+.mr-30,.mr30{margin-right: 30px;}
+.mr-35,.mr35{margin-right: 35px;}
+.mr-40,.mr40{margin-right: 40px;}
+.mr-50,.mr50{margin-right: 50px;}
+
+.mb-5,.mb5{margin-bottom: 5px;}
+.mb-10,.mb10{margin-bottom: 10px;}
+.mb-15,.mb15{margin-bottom: 15px;}
+.mb-20,.mb20{margin-bottom: 20px;}
+.mb-25,.mb25{margin-bottom: 25px;}
+.mb-30,.mb30{margin-bottom: 30px;}
+.mb-35,.mb35{margin-bottom: 35px;}
+.mb-40,.mb40{margin-bottom: 40px;}
+.mb-50,.mb50{margin-bottom: 50px;}
+
+.hidden{display: none;}
+.commWidth{width: 1200px;margin-left: auto;margin-right: auto;position: relative;}
+body{background-color: #f8f8f8;}
+
+.scrollbar{
+	&::-webkit-scrollbar{width:4px;}
+	&::-webkit-scrollbar-track{border-radius: 4px;background-color:#eee;}
+	&::-webkit-scrollbar-thumb{border-radius: 4px;background-color:#ddd;}
+}
+
+// 过渡效果，更多的直接引用element-ui中的，若没有，在这儿添加
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active 在低于版本 2.1.8 中 */ {
+  opacity: 0;
+}
+
+/* select-dropdown */
+.el-input--mini .el-input__inner{padding-left: 12px;}
+.el-select-dropdown__item.selected span{font-weight: normal;}
+
+/* pagination */
+.el-pagination{
+	font-weight: normal!important;
+	.el-pagination__editor.el-input{vertical-align: top;}
+	.el-input__inner{vertical-align: top;}
+}
+.el-pagination.is-background .btn-prev, .el-pagination.is-background .btn-next, .el-pagination.is-background .el-pager li{
+  min-width: 28px;
+}
+
+/* el-popover */
+.el-popover{
+	min-height: 40px!important;
+}
+.dark-popover{
+
+}
+
+/* el-form-item */
+.el-form-item{
+	margin-bottom: 20px;
+}
+.el-form-item.is-required .el-form-item__label:before{margin-right:  2px;}
+
+/* el-dialog */
+.el-dialog{
+	position:absolute;left:50%;top:50%;margin:0!important;transform: translate(-50%, -50%)!important;
+	.el-dialog__header{
+		text-align: left;padding-top: 16px;
+		.el-dialog__title{font-weight: normal;font-size: 14px;color: #333;line-height: 20px;}
+		.el-dialog__headerbtn{font-size: 16px;vertical-align: top;margin-top:-13px;margin-right: -8px;}
+	}
+	.el-dialog__body{padding:10px 20px 20px;color:#666;}
+}
+/* el-message */
+.el-message{
+	min-width: 330px;
+	.el-message__icon{font-size:16px;}
+}
+/* el-message-box */
+.el-message-box{
+	padding-bottom:20px;border-radius:2px;
+	.el-message-box__header{
+		text-align: left;padding-top: 16px;padding-left:20px;
+		.el-message-box__title{font-weight: normal;font-size: 14px;color: #333;line-height: 21px;}
+		.el-message-box__headerbtn{font-size: 16px;vertical-align: top;margin-top:-6px;margin-right: -2px;}
+	}
+	.el-message-box__content{padding-left: 20px;padding-right: 20px;}
+	.el-message-box__btns{padding: 10px 20px 0;}
+}
+
+.el-radio__input.is-checked + .el-radio__label{color: inherit;}
+.el-checkbox__input.is-checked + .el-checkbox__label{color: inherit;}
+
+/*联系商家*/
+.link_seller {
+  padding-left: 22px; height:20px; line-height: 20px;color: #333; background: url(~assets/img/icon/link.png) no-repeat 0 center; background-size: 16px 16px; cursor: pointer;vertical-align: middle;display:inline-block;
+  &:hover{text-decoration: none;color: #3DB1FA;}
+}
+
+// 目前仅迷你登录页面在用
+.btn{width:150px;height: 43px;line-height: 1;border: 1px solid #fff;border-radius: 3px; color: #fff; font-size: 14px;}
+.btn-primary{background-color: #3db1fa;border-color:#3db1fa;}
+button.disabled,button.disabled:focus,button.disabled:hover{background-color: #eee;cursor: default;color: #999;border-color: #ccc;}
+.btn-disabled{background-color: #ccc;border-color:#ccc;cursor: not-allowed; color: #eee;}
+
+/*搜索排序条件样式*/
+.pub_search_nav {
+  height: 46px; line-height: 46px; border: 1px solid #e8e8e8; background: #F5F5F5; margin: 20px 0px;
+  .item {
+  	line-height: 16px; padding: 14px 20px; display: block; float: left;
+  	i {margin-left: 4px;}
+  }
+  .active {background:#fff; color: #3DB1FA;}
+  .page_box {
+  	border-left: 1px solid #E8E8E8; 
+  	i {display: inline-block; padding: 0 10px; color: #ccc;}
+  	.current {color: #3DB1FA;}
+  }
+}
